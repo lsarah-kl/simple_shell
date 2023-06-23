@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add_ln_nd_end1 - function that adds a command line at end of  line_list.
+ * add_ln_nd_end1 - function that adds a command line at end of the line_list.
  * @hd: linked list head
  * @cmd_line: Command line.
  *

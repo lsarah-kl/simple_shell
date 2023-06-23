@@ -62,7 +62,7 @@ void *_realloc1(void *pointer, unsigned int old_s, unsigned int new_s)
  * @old_s: Size, in bytes of the allocated space for pointer.
  * @new_s: New size, in bytes of the reallocated memory block.
  *
- * Return: Pointer to reallocated memory block (pointer).
+ * Return: Pointer to the reallocated memory block.
  */
 char **_reallocdp1(char **pointer, unsigned int old_s, unsigned int new_s)
 {

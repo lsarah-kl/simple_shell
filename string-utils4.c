@@ -80,7 +80,7 @@ int compare_chars1(char str[], const char *delimiter)
 }
 
 /**
- * _strtok1 - Splits a string by a specified delimiter.
+ * _strtok1 - Splits a string with a specified delimiter.
  * @str: Input string to be split.
  * @delimiter: Delimiter string.
  *

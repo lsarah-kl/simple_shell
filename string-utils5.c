@@ -2,7 +2,7 @@
 
 /**
  * rev_string1 - function that reverses the chars in a given string.
- * @s: The input string to be reversed.
+ * @s: input string that need to be reversed.
  *
  * Return: Void
  */
