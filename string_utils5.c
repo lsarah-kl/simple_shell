@@ -6,7 +6,7 @@
  *
  * Return: Void
  */
-void rev_string(char *s)
+void rev_string1(char *s)
 {
 	int count = 0, i, j;
 	char *str, temp;
