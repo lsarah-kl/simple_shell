@@ -118,7 +118,7 @@ int get_hlp1(shll_comm *data_shll)
 
 /**
  * get_bltn1 - Retrieves function pointer of the built-in command
- * @command: Command line
+ * @command: The command line
  *
  * Return: Function pointer of the built-in command
  */

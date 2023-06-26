@@ -102,7 +102,7 @@ char *_strchr1(char *str, char c)
 /**
  * _strcpy1 - function that copies the string pointed to by src to dest.
  * @dest: Pointer to the destination string.
- * @src: Pointer to the source string.
+ * @src: Pointer to source string.
  *
  * Return: Pointer to the destination string.
  */

@@ -45,7 +45,7 @@ void move_nxt1(sep_list **lis_s, line_list **lis_l, shll_comm *data_shell)
  * swp_character1 - function that swaps '|' and '&' for non-printed characters
  *                 in a string.
  * @inp: Input string.
- * @boolean: Type of swap. If boolean  0, swaps '|' and '&'
+ * @boolean: Type of swap. If bool  0, swaps '|' and '&'
  *           for non-printed characters.
  *
  * Return: Swapped string.

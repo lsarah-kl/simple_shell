@@ -63,7 +63,7 @@ int get_length1(int number)
 }
 
 /**
- * _atoi1 - Converts a string to an integer.
+ * _atoi1 - function that converts a string to an integer.
  * @str: Input string.
  *
  * Return:  converted integer.

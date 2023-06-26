@@ -171,7 +171,7 @@ void looping_shll1(shll_comm *data_shell)
  * @hd: linked list head
  * @lenvar: variable length
  * @value: Value of the variable.
- * @lenval: Length of the value.
+ * @lenval: Length of value.
  *
  * Return: the address of the head.
  */

@@ -2,8 +2,8 @@
 
 /**
  * main - Entry point.
- * @argc: Argument count.
- * @argv: Argument vector.
+ * @argc: Arg count.
+ * @argv: Arg vector.
  *
  * Return: 0 on success.
  */
