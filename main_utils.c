@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * get_err1 - function that calls the error message according to the
- *	   built in, syntax, or permission
- * @datashell: Data structure containing arguments
+ * get_err - Calls the error message according to the
+ *	   builtin, syntax, or permission
+ * @datashell: Data structure that contains arguments
  * @error_val: Error value
  *
  * Return: Error value
  */
-int get_err1(shll_comm *datashell, int error_val)
+int get_err(shll_comm *datashell, int error_val)
 {
 	char *error;
 
@@ -40,12 +40,12 @@ int get_err1(shll_comm *datashell, int error_val)
 }
 
 /**
- * empty_data1 - freeing data structure.
+ * empty_data - frees data structure.
  * @data_shell: data structure.
  *
- * Return: nothing
+ * Return: no return.
  */
-void empty_data1(shll_comm *data_shell)
+void empty_data(shll_comm *data_shell)
 {
 	unsigned int index;
 
@@ -57,13 +57,13 @@ void empty_data1(shll_comm *data_shell)
 }
 
 /**
- * set_datashell1 - Initializing data structure
+ * set_datashell - Initialize data structure
  * @data_shell: data structure
  * @argv: argument vector
  *
- * Return: nothing
+ * Return: no return
  */
-void set_datashell1(shll_comm *data_shell, char **argv)
+void set_datashell(shll_comm *data_shell, char **argv)
 {
 	unsigned int i;
 
@@ -84,13 +84,13 @@ void set_datashell1(shll_comm *data_shell, char **argv)
 }
 
 /**
- * get_hlp1 -  retrieves help messages
+ * get_hlp - Function that retrieves help messages
  *	   according to built-in command
  * @data_shll: Data structure (args and input)
  *
  * Return: 1
  */
-int get_hlp1(shll_comm *data_shll)
+int get_hlp(shll_comm *data_shll)
 {
 
 	if (data_shll->args[1] == 0)
@@ -117,12 +117,12 @@ int get_hlp1(shll_comm *data_shll)
 }
 
 /**
- * get_bltn1 - Retrieves function pointer of the built-in command
- * @command: The command line
+ * get_bltn - Retrieves the function pointer of the builtin command
+ * @command: Command line
  *
- * Return: Function pointer of the built-in command
+ * Return: Function pointer of the builtin command
  */
-int (*get_bltn1(char *command))(shll_comm *)
+int (*get_bltn(char *command))(shll_comm *)
 {
 	builtin_t bltn[] = {
 	    {"env", display_env},

@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * splt_ln1 - function that tokenizes the input string.
+ * splt_ln - Tokenizes the input string.
  * @inp: Input string.
  *
- * Return: splitted string
+ * Return: String splitted.
  */
-char **splt_ln1(char *inp)
+char **splt_ln(char *inp)
 {
 	size_t bsize;
 	size_t i;
@@ -44,14 +44,14 @@ char **splt_ln1(char *inp)
 }
 
 /**
- * split_cmds1 - Splits command lines according to separators ;, |, and &,
+ * split_cmds - Splits command lines according to the separators ;, |, and &,
  *	      and executes them.
  * @datashell: Data structure.
  * @inp: Input string.
  *
- * Return: 0 if exit, 1 if continue.
+ * Return: 0 to exit, 1 to continue.
  */
-int split_cmds1(shll_comm *datashell, char *inp)
+int split_cmds(shll_comm *datashell, char *inp)
 {
 
 	sep_list *hd_s, *ls_s;
@@ -91,12 +91,12 @@ int split_cmds1(shll_comm *datashell, char *inp)
 }
 
 /**
- * without_cmt1 - function that deletes comments from the input.
+ * without_cmt - Deletes comments from the input.
  *
  * @input: Input string.
- * Return: Input with no comments.
+ * Return: Input without comments.
  */
-char *without_cmt1(char *input)
+char *without_cmt(char *input)
 {
 	int i, up_to;
 
@@ -126,12 +126,12 @@ char *without_cmt1(char *input)
 }
 
 /**
- * looping_shll1 - Main loop of the shell
+ * looping_shll - Main loop of the shell
  * @data_shell: Data relevant to the shell (av, input, args)
  *
- * Return: Nothing
+ * Return: No return.
  */
-void looping_shll1(shll_comm *data_shell)
+void looping_shll(shll_comm *data_shell)
 {
 	int looping, int_eof;
 	char *inp;
@@ -167,15 +167,15 @@ void looping_shll1(shll_comm *data_shell)
 }
 
 /**
- * add_var_nd1 - Adds a variable at the end of a r_var list.
- * @hd: linked list head
- * @lenvar: variable length
+ * add_var_nd - Adds a variable at the end of a r_var list.
+ * @hd: Head of the linked list.
+ * @lenvar: Length of the variable.
  * @value: Value of the variable.
- * @lenval: Length of value.
+ * @lenval: Length of the value.
  *
- * Return: the address of the head.
+ * Return: Address of the head.
  */
-r_var *add_var_nd1(r_var **hd, int lenvar, char *value, int lenval)
+r_var *add_var_nd(r_var **hd, int lenvar, char *value, int lenval)
 {
 	r_var *newnd, *tmp;
 

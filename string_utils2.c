@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * conv_itoa1 - function that converts an integer to a string.
- * @number: The int number to convert.
+ * conv_itoa - Converts an integer to a string.
+ * @number: The integer number to convert.
  *
- * Return: string representation of the integer.
+ * Return: The string representation of the integer.
  */
-char *conv_itoa1(int number)
+char *conv_itoa(int number)
 {
 	unsigned int n1;
 	int len = get_length(number);
@@ -36,12 +36,12 @@ char *conv_itoa1(int number)
 }
 
 /**
- * get_length1 - Gets the length of number.
- * @number: The number to calculate the length of
+ * get_length - Get the length of a number.
+ * @number: The number for which to calculate the length.
  *
  * Return: The length of the number.
  */
-int get_length1(int number)
+int get_length(int number)
 {
 	unsigned int n1;
 	int lenght = 1;
@@ -63,12 +63,12 @@ int get_length1(int number)
 }
 
 /**
- * _atoi1 - function that converts a string to an integer.
+ * _atoi - Converts a string to an integer.
  * @str: Input string.
  *
- * Return:  converted integer.
+ * Return: The converted integer.
  */
-int _atoi1(char *str)
+int _atoi(char *str)
 {
 	unsigned int counter = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
