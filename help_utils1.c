@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * disp_help_cd1 - to Help information for the builtin alias.
+ * disp_help_cd - Help information for the builtin alias.
  *
  * Return: no return
  */
-void disp_help_cd1(void)
+void disp_help_cd(void)
 {
 	char *hlp = "cd: cd [-L|[-P [-e]] [-@]] [dir]\n";
 
@@ -15,11 +15,11 @@ void disp_help_cd1(void)
 }
 
 /**
- * disp_help_alias1 - To Help information for the builtin alias.
+ * disp_help_alias - Help information for the builtin alias.
  *
  * Return: no return
  */
-void disp_help_alias1(void)
+void disp_help_alias(void)
 {
 	char *hlp = "alias: alias [-p] [name[=value]...]\n";
 
@@ -29,11 +29,11 @@ void disp_help_alias1(void)
 }
 
 /**
- * disp_help1 - to Help information for the builtin help.
+ * disp_help - Help information for the builtin help.
  *
  * Return: no return
  */
-void disp_help1(void)
+void disp_help(void)
 {
 	char *hlp = "help: help [-dms] [pattern ...]\n";
 
@@ -45,11 +45,11 @@ void disp_help1(void)
 }
 
 /**
- * disp_help_env1 - To Help information for the builtin env
+ * disp_help_env - Help information for the builtin env
  *
  * Return: no return
  */
-void disp_help_env1(void)
+void disp_help_env(void)
 {
 	char *hlp = "env: env [option] [name=value] [command [args]]\n\t";
 
@@ -59,11 +59,11 @@ void disp_help_env1(void)
 }
 
 /**
- * disp_help_setenv1 - To Help information for the builtin setenv
+ * disp_help_setenv - Help information for the builtin setenv
  *
  * Return: no return
  */
-void disp_help_setenv1(void)
+void disp_help_setenv(void)
 {
 
 	char *help = "setenv: setenv (const char *name, const char *value,";

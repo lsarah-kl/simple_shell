@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * changedir_shell1 - To changes the current directory.
+ * changedir_shell - Changes the current directory.
  * @data_sh: Pointer to the data
  *
  * Return: 1 on success.
  */
-int changedir_shell1(shll_comm *data_sh)
+int changedir_shell(shll_comm *data_sh)
 {
 	int inhome, inhome2, isdashboard;
 	char *directory = data_sh->args[1];
@@ -42,13 +42,13 @@ int changedir_shell1(shll_comm *data_sh)
 }
 
 /**
- * chandir_dor1 - To changes to the parent directory.
+ * chandir_dor - Changes to the parent directory.
  * @data_sh: Pointer to the data structure containing the
  *           environment variables.
  *
  * Return: No return value.
  */
-void chandir_dor1(shll_comm *data_sh)
+void chandir_dor(shll_comm *data_sh)
 {
 	char pwd[PATH_MAX];
 	char *directory, *cp_printwd, *cp_strtok_pwd;
@@ -93,13 +93,13 @@ void chandir_dor1(shll_comm *data_sh)
 }
 
 /**
- * cd_to_dist1 - Changes to a directory specified by the user.
+ * cd_to_dist - Changes to a directory specified by the user.
  * @data_sh: Pointer to the data structure containing
  *           the directories.
  *
  * Return: No return value.
  */
-void cd_to_dist1(shll_comm *data_sh)
+void cd_to_dist(shll_comm *data_sh)
 {
 	char printwd[PATH_MAX];
 	char *directory, *cp_pwd, *cp_dir;
@@ -128,13 +128,13 @@ void cd_to_dist1(shll_comm *data_sh)
 }
 
 /**
- * changedir_prev1 - Changes to the previous directory.
+ * changedir_prev - Changes to the previous directory.
  * @data_sh: Data relevant to the environment and
  *           directories.
  *
  * Return: No return value.
  */
-void changedir_prev1(shll_comm *data_sh)
+void changedir_prev(shll_comm *data_sh)
 {
 	char pwd[PATH_MAX];
 	char *p_pwd, *p_oldpwd, *cp_pwd, *cp_oldpwd;
@@ -171,12 +171,12 @@ void changedir_prev1(shll_comm *data_sh)
 }
 
 /**
- * changedir_to_home1 - Changes to the home directory.
+ * changedir_to_home - Changes to the home directory.
  * @data_sh: Data relevant to the environment.
  *
  * Return: No return value.
  */
-void changedir_to_home1(shll_comm *data_sh)
+void changedir_to_home(shll_comm *data_sh)
 {
 	char *print_pwd, *home;
 	char pwd[PATH_MAX];
