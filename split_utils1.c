@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * move_nxt1 - function that moves to the next command line stored.
+ * move_nxt - Moves to the next command line stored.
  * @lis_s: Separator list.
- * @lis_l: list of command line
+ * @lis_l: Command line list.
  * @data_shell: Data structure.
  *
- * Return: Nothing
+ * Return: No return value.
  */
-void move_nxt1(sep_list **lis_s, line_list **lis_l, shll_comm *data_shell)
+void move_nxt(sep_list **lis_s, line_list **lis_l, shll_comm *data_shell)
 {
 	int loop_sep;
 	sep_list *ls_s;
@@ -42,15 +42,15 @@ void move_nxt1(sep_list **lis_s, line_list **lis_l, shll_comm *data_shell)
 }
 
 /**
- * swp_character1 - function that swaps '|' and '&' for non-printed characters
+ * swp_character - Swaps '|' and '&' for non-printed characters
  *                 in a string.
  * @inp: Input string.
- * @boolean: Type of swap. If bool  0, swaps '|' and '&'
+ * @boolean: Type of swap. If boolean is 0, swaps '|' and '&'
  *           for non-printed characters.
  *
  * Return: Swapped string.
  */
-char *swp_character1(char *inp, int boolean)
+char *swp_character(char *inp, int boolean)
 {
 	int i;
 
@@ -87,14 +87,14 @@ char *swp_character1(char *inp, int boolean)
 }
 
 /**
- * add_nd1 - Adding separators and command lines to the lists.
- * @hd_s: separator list head
+ * add_nd - Adds separators and command lines to the lists.
+ * @hd_s: Head of the separator list.
  * @hd_l: Head of the command lines list.
  * @inp: Input string.
  *
- * Return: Nothing
+ * Return: No return value.
  */
-void add_nd1(sep_list **hd_s, line_list **hd_l, char *inp)
+void add_nd(sep_list **hd_s, line_list **hd_l, char *inp)
 {
 	int i;
 	char *command_line;
@@ -122,12 +122,12 @@ void add_nd1(sep_list **hd_s, line_list **hd_l, char *inp)
 }
 
 /**
- * read_line1 - Reads the input string.
- * @int_eof: Return value of getline function.
+ * read_line - Reads the input string.
+ * @int_eof: Return value of the getline function.
  *
  * Return: Input string.
  */
-char *read_line1(int *int_eof)
+char *read_line(int *int_eof)
 {
 	char *inp = NULL;
 	size_t buffersize = 0;
@@ -138,11 +138,11 @@ char *read_line1(int *int_eof)
 }
 
 /**
- * free_value_ls1 - Frees a r_var list.
- * @hd: linked list head
+ * free_value_ls - Frees a r_var list.
+ * @hd: Head of the linked list.
  * Return: No return.
  */
-void free_value_ls1(r_var **hd)
+void free_value_ls(r_var **hd)
 {
 	r_var *tmp;
 	r_var *current;

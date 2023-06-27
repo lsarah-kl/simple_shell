@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strlen1 - function that returns the length of a string.
+ * _strlen - Returns the length of a string.
  * @str: The input string.
  *
- * Return: the string length
+ * Return: The length of the string.
  */
-int _strlen1(const char *str)
+int _strlen(const char *str)
 {
 	int len;
 
@@ -17,12 +17,12 @@ int _strlen1(const char *str)
 }
 
 /**
- * _isdigit1 - tells if a string consists only of numeric digits.
+ * _isdigit - Determines if a string consists only of numeric digits.
  * @str: The input string to be checked.
  *
  * Return: 1 if the string consists only of numeric digits, 0 otherwise.
  */
-int _isdigit1(const char *str)
+int _isdigit(const char *str)
 {
 	unsigned int i;
 
@@ -33,12 +33,12 @@ int _isdigit1(const char *str)
 }
 
 /**
- * _strdup1 - Duplicates a string in heap memory.
- * @str: Type char pointer representing the string to be duplicated
+ * _strdup - Duplicates a string in the heap memory.
+ * @str: Type char pointer representing the string to duplicate.
  *
  * Return: Pointer to the duplicated string.
  */
-char *_strdup1(const char *str)
+char *_strdup(const char *str)
 {
 	char *new;
 	size_t length;
@@ -53,13 +53,13 @@ char *_strdup1(const char *str)
 }
 
 /**
- * compare_chars1 - Compares characters of strings.
+ * compare_chars - Compares characters of strings.
  * @str: Input string to compare.
  * @delimiter: Delimiter string for comparison.
  *
- * Return: 1 if the chars are equal, 0 otherwise.
+ * Return: 1 if the characters are equal, 0 otherwise.
  */
-int compare_chars1(char str[], const char *delimiter)
+int compare_chars(char str[], const char *delimiter)
 {
 	unsigned int i, l, m;
 
@@ -80,14 +80,14 @@ int compare_chars1(char str[], const char *delimiter)
 }
 
 /**
- * _strtok1 - Splits a string with a specified delimiter.
+ * _strtok - Splits a string by a specified delimiter.
  * @str: Input string to be split.
  * @delimiter: Delimiter string.
  *
  * Return: Pointer to the next token in the string,
  *         or NULL if no more tokens are found.
  */
-char *_strtok1(char str[], const char *delimiter)
+char *_strtok(char str[], const char *delimiter)
 {
 	static char *splitted, *str_end;
 	char *str_start;

@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * _strspn1 - function that calculates the len of initial segment of a
+ * _strspn - Calculates the length of the initial segment of a
  *           string that consists of only accepted bytes.
  * @str: Pointer to the string to search.
- * @acc: Pointer to accepted bytes.
+ * @acc: Pointer to the accepted bytes.
  *
- * Return: The len of the prefix substring that consists
+ * Return: The length of the prefix substring that consists
  *         of only accepted bytes.
  */
-int _strspn1(char *str, char *acc)
+int _strspn(char *str, char *acc)
 {
 	int i, j, boolean;
 
@@ -32,13 +32,13 @@ int _strspn1(char *str, char *acc)
 }
 
 /**
- * _strcat1 - Concatenates two strings.
- * @dest: Pointer to  destination string
+ * _strcat - Concatenates two strings.
+ * @dest: Pointer to the destination string
  * @src: Pointer to the source string
  *
  * Return: Pointer to the destination string after concatenation.
  */
-char *_strcat1(char *dest, const char *src)
+char *_strcat(char *dest, const char *src)
 {
 	int i, j;
 
@@ -57,14 +57,14 @@ char *_strcat1(char *dest, const char *src)
 }
 
 /**
- * _strcmp1 - Compares two strings.
- * @str1: Pointer to the 1st string to compare.
- * @str2: Pointer to the 2nd string to compare.
+ * _strcmp - Compares two strings.
+ * @str1: Pointer to the first string to compare.
+ * @str2: Pointer to the second string to compare.
  *
  * Return: 0 if the strings are equal, a positive value if str1 is greater,
  *         a negative value if str2 is greater.
  */
-int _strcmp1(char *str1, char *str2)
+int _strcmp(char *str1, char *str2)
 {
 	int i;
 
@@ -80,14 +80,14 @@ int _strcmp1(char *str1, char *str2)
 }
 
 /**
- * _strchr1 - Locates a character in a string.
+ * _strchr - Locates a character in a string.
  * @str: Pointer to the string to search.
  * @c: Character to locate.
  *
  * Return: Pointer to the first occurrence of the character 'c' in 'str',
  *         or NULL if the character is not found.
  */
-char *_strchr1(char *str, char c)
+char *_strchr(char *str, char c)
 {
 	unsigned int i = 0;
 
@@ -100,13 +100,13 @@ char *_strchr1(char *str, char c)
 }
 
 /**
- * _strcpy1 - function that copies the string pointed to by src to dest.
+ * _strcpy - Copies the string pointed to by src to dest.
  * @dest: Pointer to the destination string.
- * @src: Pointer to source string.
+ * @src: Pointer to the source string.
  *
  * Return: Pointer to the destination string.
  */
-char *_strcpy1(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 
 	size_t a;

@@ -1,1 +1,1 @@
-simple shell project Ghizlane & Sarah 
+Simple shell by Ghizlane and Sarah
