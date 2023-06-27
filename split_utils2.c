@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * splt_ln - Tokenizes the input string.
+ * splt_ln - function that tokenizes the input string.
  * @inp: Input string.
  *
  * Return: String splitted.
@@ -44,12 +44,12 @@ char **splt_ln(char *inp)
 }
 
 /**
- * split_cmds - Splits command lines according to the separators ;, |, and &,
- *	      and executes them.
+ * split_cmds - Splits and executes command lines according to
+ * 		 the separators ;, |, and &,
  * @datashell: Data structure.
  * @inp: Input string.
  *
- * Return: 0 to exit, 1 to continue.
+ * Return: 0 for exit, 1 for continue.
  */
 int split_cmds(shll_comm *datashell, char *inp)
 {
@@ -94,7 +94,7 @@ int split_cmds(shll_comm *datashell, char *inp)
  * without_cmt - Deletes comments from the input.
  *
  * @input: Input string.
- * Return: Input without comments.
+ * Return: Input with no comms.
  */
 char *without_cmt(char *input)
 {
@@ -127,9 +127,9 @@ char *without_cmt(char *input)
 
 /**
  * looping_shll - Main loop of the shell
- * @data_shell: Data relevant to the shell (av, input, args)
+ * @data_shell: Data relevant to the shell
  *
- * Return: No return.
+ * Return: Nothing
  */
 void looping_shll(shll_comm *data_shell)
 {
@@ -168,12 +168,12 @@ void looping_shll(shll_comm *data_shell)
 
 /**
  * add_var_nd - Adds a variable at the end of a r_var list.
- * @hd: Head of the linked list.
- * @lenvar: Length of the variable.
+ * @hd:  linked list head
+ * @lenvar: Len of the variable.
  * @value: Value of the variable.
  * @lenval: Length of the value.
  *
- * Return: Address of the head.
+ * Return: head adress
  */
 r_var *add_var_nd(r_var **hd, int lenvar, char *value, int lenval)
 {

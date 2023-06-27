@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * conv_itoa - Converts an integer to a string.
- * @number: The integer number to convert.
+ * conv_itoa - function that converts an integer to a string.
+ * @number: The integer to convert.
  *
- * Return: The string representation of the integer.
+ * Return: The string equivalent of the integer.
  */
 char *conv_itoa(int number)
 {
@@ -37,9 +37,9 @@ char *conv_itoa(int number)
 
 /**
  * get_length - Get the length of a number.
- * @number: The number for which to calculate the length.
+ * @number: The number we calculate the length of.
  *
- * Return: The length of the number.
+ * Return: The len of the number.
  */
 int get_length(int number)
 {
@@ -66,7 +66,7 @@ int get_length(int number)
  * _atoi - Converts a string to an integer.
  * @str: Input string.
  *
- * Return: The converted integer.
+ * Return: The integer we converted
  */
 int _atoi(char *str)
 {

@@ -2,10 +2,10 @@
 
 /**
  * main - Entry point.
- * @argc: Argument count.
- * @argv: Argument vector.
+ * @argc: Arg count.
+ * @argv: Arg vector.
  *
- * Return: 0 on success.
+ * Return: 0 if success.
  */
 int main(int argc, char **argv)
 {

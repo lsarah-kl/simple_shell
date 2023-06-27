@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * get_err - Calls the error message according to the
+ * get_err - Function that calls the err message according to the
  *	   builtin, syntax, or permission
- * @datashell: Data structure that contains arguments
- * @error_val: Error value
+ * @datashell: Data structure containing arguments
+ * @error_val: Err value
  *
  * Return: Error value
  */
@@ -43,7 +43,7 @@ int get_err(shll_comm *datashell, int error_val)
  * empty_data - frees data structure.
  * @data_shell: data structure.
  *
- * Return: no return.
+ * Return: nothing.
  */
 void empty_data(shll_comm *data_shell)
 {
@@ -57,11 +57,11 @@ void empty_data(shll_comm *data_shell)
 }
 
 /**
- * set_datashell - Initialize data structure
+ * set_datashell - Initializes the data structure
  * @data_shell: data structure
  * @argv: argument vector
  *
- * Return: no return
+ * Return: nothing
  */
 void set_datashell(shll_comm *data_shell, char **argv)
 {
@@ -117,10 +117,10 @@ int get_hlp(shll_comm *data_shll)
 }
 
 /**
- * get_bltn - Retrieves the function pointer of the builtin command
+ * get_bltn - Retrieves the function pointer of the built-in command
  * @command: Command line
  *
- * Return: Function pointer of the builtin command
+ * Return: Function pointer to built-in command
  */
 int (*get_bltn(char *command))(shll_comm *)
 {

@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strlen - Returns the length of a string.
+ * _strlen - function that returns the length of a string.
  * @str: The input string.
  *
- * Return: The length of the string.
+ * Return: the string length
  */
 int _strlen(const char *str)
 {
@@ -17,10 +17,10 @@ int _strlen(const char *str)
 }
 
 /**
- * _isdigit - Determines if a string consists only of numeric digits.
+ * _isdigit - Determines if a string containts only numeric digits.
  * @str: The input string to be checked.
  *
- * Return: 1 if the string consists only of numeric digits, 0 otherwise.
+ * Return: 1 if the string cantains numeric digits only, else 0
  */
 int _isdigit(const char *str)
 {
@@ -36,7 +36,7 @@ int _isdigit(const char *str)
  * _strdup - Duplicates a string in the heap memory.
  * @str: Type char pointer representing the string to duplicate.
  *
- * Return: Pointer to the duplicated string.
+ * Return: Pointer to duplicated string.
  */
 char *_strdup(const char *str)
 {
@@ -53,11 +53,11 @@ char *_strdup(const char *str)
 }
 
 /**
- * compare_chars - Compares characters of strings.
+ * compare_chars - Compares chars of strings.
  * @str: Input string to compare.
- * @delimiter: Delimiter string for comparison.
+ * @delimiter: Delimiter string to be comparison.
  *
- * Return: 1 if the characters are equal, 0 otherwise.
+ * Return: 1 if the chars are equal, else 0
  */
 int compare_chars(char str[], const char *delimiter)
 {
@@ -81,11 +81,11 @@ int compare_chars(char str[], const char *delimiter)
 
 /**
  * _strtok - Splits a string by a specified delimiter.
- * @str: Input string to be split.
+ * @str: Input string to split.
  * @delimiter: Delimiter string.
  *
- * Return: Pointer to the next token in the string,
- *         or NULL if no more tokens are found.
+ * Return: Pointer pointing to next token in the str,
+ *         else NULL if no more tokens are found.
  */
 char *_strtok(char str[], const char *delimiter)
 {

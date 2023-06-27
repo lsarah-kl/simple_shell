@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * add_ln_nd_end - Adds a command line at the end of a line_list.
- * @hd: Head of the linked list.
+ * add_ln_nd_end - function that adds a cmd line at the end of a line_list.
+ * @hd: linked list head
  * @cmd_line: Command line.
  *
- * Return: Address of the head.
+ * Return: Address to the head.
  */
 line_list *add_ln_nd_end(line_list **hd, char *cmd_line)
 {
@@ -35,9 +35,9 @@ line_list *add_ln_nd_end(line_list **hd, char *cmd_line)
 
 /**
  * free_line_ls - Frees a line_list.
- * @hd: Head of the linked list.
+ * @hd: linked list head
  *
- * Return: No return.
+ * Return: Nothing
  */
 void free_line_ls(line_list **hd)
 {
@@ -59,7 +59,7 @@ void free_line_ls(line_list **hd)
 /**
  * add_node_en - Adds a separator found at the end
  * of a sep_list.
- * @hd: Head of the linked list.
+ * @hd: linked list head
  * @sp: Separator found (; | &).
  *
  * Return: Address of the head.
@@ -92,9 +92,9 @@ sep_list *add_node_en(sep_list **hd, char sp)
 
 /**
  * free_sp_ls - Frees a sep_list.
- * @hd: Head of the linked list.
+ * @hd: linked lis t head .
  *
- * Return: No return.
+ * Return: Nothing
  */
 void free_sp_ls(sep_list **hd)
 {

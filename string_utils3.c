@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * _strspn - Calculates the length of the initial segment of a
+ * _strspn - function that calculates the len of initial segment of a
  *           string that consists of only accepted bytes.
  * @str: Pointer to the string to search.
  * @acc: Pointer to the accepted bytes.
  *
- * Return: The length of the prefix substring that consists
+ * Return: The length of the substring that consists
  *         of only accepted bytes.
  */
 int _strspn(char *str, char *acc)
@@ -33,8 +33,8 @@ int _strspn(char *str, char *acc)
 
 /**
  * _strcat - Concatenates two strings.
- * @dest: Pointer to the destination string
- * @src: Pointer to the source string
+ * @dest: Pointer to  destination string
+ * @src: Pointer to source string
  *
  * Return: Pointer to the destination string after concatenation.
  */
@@ -58,8 +58,8 @@ char *_strcat(char *dest, const char *src)
 
 /**
  * _strcmp - Compares two strings.
- * @str1: Pointer to the first string to compare.
- * @str2: Pointer to the second string to compare.
+ * @str1: Pointer to 1st string to compare.
+ * @str2: Pointer to 2nd string to compare.
  *
  * Return: 0 if the strings are equal, a positive value if str1 is greater,
  *         a negative value if str2 is greater.
@@ -80,12 +80,12 @@ int _strcmp(char *str1, char *str2)
 }
 
 /**
- * _strchr - Locates a character in a string.
+ * _strchr - Locates a character inside a string.
  * @str: Pointer to the string to search.
- * @c: Character to locate.
+ * @c: Character to be located.
  *
  * Return: Pointer to the first occurrence of the character 'c' in 'str',
- *         or NULL if the character is not found.
+ *         else NULL if the char is not found.
  */
 char *_strchr(char *str, char c)
 {
@@ -104,7 +104,7 @@ char *_strchr(char *str, char c)
  * @dest: Pointer to the destination string.
  * @src: Pointer to the source string.
  *
- * Return: Pointer to the destination string.
+ * Return: Pointer pointing to destination string.
  */
 char *_strcpy(char *dest, char *src)
 {
